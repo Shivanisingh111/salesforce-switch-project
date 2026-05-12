@@ -4,10 +4,11 @@ import { useState } from "react";
 function App() {
 
   const [rules, setRules] = useState([]);
-  const [loggedIn, setLoggedIn] = useState(
+  const [loggedIn] = useState(
     localStorage.getItem("loggedIn") === "true"
   );
-  const [user, setUser] = useState("Salesforce User");
+
+  const [user] = useState("Salesforce User");
   const [activeTab, setActiveTab] = useState("validation");
 
   if (
