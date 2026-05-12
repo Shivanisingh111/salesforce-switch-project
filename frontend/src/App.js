@@ -20,7 +20,7 @@ function App() {
 
   const loginToSalesforce = () => {
 
-    window.location.href = "http://localhost:5000/login";
+    window.location.href = "https://salesforce-switch-backend-dhmp.onrender.com/login";
 
   };
 
@@ -29,7 +29,7 @@ function App() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/validation-rules"
+        "https://salesforce-switch-backend-dhmp.onrender.com/validation-rules"
       );
 
       const updatedRules = response.data.map((rule) => ({
